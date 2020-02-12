@@ -1,5 +1,7 @@
 {
   "name": "nativo4Borra",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

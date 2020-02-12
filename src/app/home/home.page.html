@@ -7,8 +7,20 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-item>
+    <ion-label>
+      Creando usuarios
+    </ion-label>
+  </ion-item>
+  
+ 
+<!-- <ion-button (click)="generarUsuario()">Generar</ion-button> -->
+<ion-button (click)="muestraLista()">Lista</ion-button>
+  <ion-list *ngIf="avalaible"  >
+    <ion-item  *ngFor="let item of estudios">
+      <ion-label>{{item.identification}}</ion-label>
+          <ion-label>{{item.name}}</ion-label>     
+      <ion-label>{{item.lastname}}</ion-label>  
+    </ion-item>  
+  </ion-list>
 </ion-content>
